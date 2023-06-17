@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "TrousersOnly",
+    "version": "1.0",
+    "description": "Hides Youtube Shorts wherever possible to help keep you distraction free",
+    "icons": {
+        "16":  "img/icon-16.png",
+        "32":  "img/icon-32.png",
+        "48":  "img/icon-48.png",
+        "128": "img/icon-128.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["js/trousers.js"],
+          "matches": [
+            "https://youtube.com/*",
+            "https://www.youtube.com/*"
+          ]
+        }
+      ]
+}
