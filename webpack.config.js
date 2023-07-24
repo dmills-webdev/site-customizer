@@ -1,13 +1,13 @@
 const path = require('path');
 
 module.exports = {
-    entry: [
-        path.resolve(__dirname, './src/script.js'),
-        path.resolve(__dirname, './src/style.scss'),
-    ],
+    entry: {
+        main: ['./src/main.js', './src/main.scss' ],
+        settings:  [ './src/settings.js', './src/settings.scss' ],
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.min.js',
+        filename: '[name].min.js'
     },
 
     module: {

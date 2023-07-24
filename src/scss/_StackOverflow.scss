@@ -1,12 +1,16 @@
 @use '../helpers.scss' as *;
 
-#sidebar {
-    /* Blog */
-    .s-sidebarwidget__yellow {
-        @include display-none;
+html.dmwd-site-customizer-enabled {
+
+    #sidebar {
+        /* Blog */
+        .s-sidebarwidget__yellow {
+            @include display-none;
+        }
+        /* Hot Network Questions */
+        #hot-network-questions {
+            @include display-none;
+        }
     }
-    /* Hot Network Questions */
-    #hot-network-questions {
-        @include display-none;
-    }
+
 }

@@ -1,41 +1,45 @@
 @use '../helpers.scss' as *;
 
-/* Sitewide */
-#sections {
-    ytd-guide-section-renderer:nth-of-type(3) {
-        @include display-none;
-    }
-}
+html.dmwd-site-customizer-enabled {
 
-/* Main Sidebar */
-a[title=Shorts] {
-    @include display-none;
-}
-
-/* Video Page */
-ytd-watch-flexy {
-    /* Reccomended videos */
-    #secondary #secondary-inner {
-        @include hidden;
-        //@include mask;
-
-        #channel-name {
-            z-index: 1 !important;
+    /* Sitewide */
+    #sections {
+        ytd-guide-section-renderer:nth-of-type(3) {
+            @include display-none;
         }
     }
 
-    /* Comments */
-    #comments {
+    /* Main Sidebar */
+    a[title=Shorts] {
         @include display-none;
     }
 
-    /* Meta info under videos */
-    .ytd-watch-metadata {
-        @include display-none;
+    /* Video Page */
+    ytd-watch-flexy {
+        /* Reccomended videos */
+        #secondary #secondary-inner {
+            @include hidden;
+            //@include mask;
+
+            #channel-name {
+                z-index: 1 !important;
+            }
+        }
+
+        /* Comments */
+        #comments {
+            @include display-none;
+        }
+
+        /* Meta info under videos */
+        .ytd-watch-metadata {
+            @include display-none;
+        }
+
+        /* Reccomeneded Videos from same channel shown in Description box */
+        #infocards-section {
+            @include display-none;
+        }
     }
 
-    /* Reccomeneded Videos from same channel shown in Description box */
-    #infocards-section {
-        @include display-none;
-    }
 }

@@ -12,10 +12,13 @@
     "content_scripts": [
         {
           "js": ["dist/main.min.js"],
-          "css": ["dist/style.min.css"],
+          "css": ["dist/main.min.css"],
           "matches": [
             "<all_urls>"
           ]
         }
-    ]
+    ],
+    "action": {
+      "default_popup": "settings.html"
+    }
 }
