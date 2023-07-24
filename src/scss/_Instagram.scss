@@ -1,0 +1,5 @@
+@use '../helpers.scss' as *;
+
+a[href="/reels/"] {
+    @include display-none;
+}
